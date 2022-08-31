@@ -1,0 +1,244 @@
+:root{
+    --navbar-and-footer-color: #0d0d0d;
+    --navbar-text-color: #e6e6e6;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  html{
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  
+  body{
+    font-family: 'Staatliches', sans-serif;
+    background: linear-gradient(#ffffff, #bfbfbf, #8c8c8c);
+  }
+  
+  #navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--navbar-and-footer-color);
+    display: flex;
+    justify-content: flex-end;
+    min-height: 80px;
+  }
+  
+  #navbar a{
+    text-decoration: none;
+    color: var(--navbar-text-color);
+    padding: 1.5rem;
+  }
+  
+  #navbar a:hover{
+    color: white;
+  }
+  
+  ul{
+    font-size: 1.3rem;
+    padding: 40px 10px;
+    display: flex;
+    list-style: none;
+  }
+  
+  #navbar ul li:hover{
+    transform: scale(1.2);
+  }
+  
+  #welcome-section{
+    margin-top: 100px;
+    height: 100vh;
+    width: 100%;
+    background-image: url('https://i.im.ge/2022/08/14/OliKmY.1347335.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .welcome-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 40px;;
+  }
+  
+  .welcome-phrase{
+    color: #f2f2f2;
+    font-size: 5rem;
+    text-shadow: 1px 1px 5px black;
+  }
+  
+  .welcome-phrase.small{
+    font-size: 1.5rem;
+  }
+  
+  #projects{
+    width: 80%;
+    height: 120vh;
+    margin: 0 auto;
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9d9d9;
+  }
+  
+  h2{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .project-tile{
+    height: calc(100vh/2 - 10px);
+    width: 100%;
+    margin: 15px auto 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .project{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .proj-image{
+    width: 100%;
+    height: auto;
+  }
+  
+  h3{
+    margin: 10px 0;
+  }
+  
+  #contacts{
+    height: 60vh;
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9d9d9;
+  }
+  
+  #contacts h2{
+    font-size: 2.5rem;
+  }
+  
+  #profile-link{
+    margin: 0 20px;
+  }
+  
+  .contact-list{
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+  }
+  
+  #profile-link{
+    text-decoration: none;
+    color: black;
+    
+  }
+  
+  #profile-link:hover{
+    transform: scale(1.2);
+  }
+  
+  .link-text{
+    display: inline;
+    font-family: 'Staatliches', sans-serif;
+  }
+  
+  
+  footer{
+    height: 80px;
+    width: 100%;
+    font-size: 0.8rem;
+    background-color: var(--navbar-and-footer-color);
+    color: var(--navbar-text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+
+  footer p{
+    margin-left: 10px;
+  }
+  
+  @media (max-width: 28.75em){
+    h2{
+        font-size: 1.2rem;
+    }
+
+    h3{
+        font-size: 0.9rem;
+    }
+    #navbar{
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul{
+      padding: 20px 0;
+      font-size: 1rem;
+    }
+  
+    ul li{
+      padding: 10px 0;
+    }
+
+    #welcome-section{
+        margin-top: 80px;
+        width: auto;
+        padding: 0;
+    }
+
+    #projects{
+        padding: 20px 10px;
+        justify-content: space-evenly;
+    }
+
+    .project-tile{
+        height: unset;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .project{
+        width: 98%;
+        margin-bottom: 10px;
+    }
+
+    #contacts{
+        height: 80vh;
+    }
+
+    .contact-list{
+        font-size: 0.8rem;
+    }
+
+    footer{
+        width: 100vw;
+        padding: 0;
+        font-size: 0.6rem;
+    }    
+  }
